@@ -1,0 +1,100 @@
+
+<header>
+	<img class="header-bckgnd" src="fileadmin/templates/img/header-bckgnd.png">
+	<img class="header-bckgnd2" src="fileadmin/templates/img/header-bckgnd2.png">
+	<img class="header-bckgnd3" src="fileadmin/templates/img/header-bckgnd3.png">
+	<div class="container">
+		<div class="col-sm-2 mob-logo visible-xs">
+	    	<div class="row">
+	    		<f:cObject typoscriptObjectPath='lib.logo1' />
+	    	</div>	
+	    </div>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="menu">
+				<img src="fileadmin/templates/img/header.png">
+				<img class="header2" src="fileadmin/templates/img/header2.png">
+				<img class="header3" src="fileadmin/templates/img/header3.png">
+				    <div class="navbar navbar-default" role="navigation">
+				        <div class="navbar-header">
+				          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				          </button>
+				          <a class="navbar-brand" href="#">Menü</a>
+				        </div>
+				        <div class="navbar-collapse collapse">
+				           <f:cObject typoscriptObjectPath='lib.navigation' />
+				        </div><!--/.nav-collapse -->
+				    </div>
+				</div>    
+			</div>    
+		</div>    
+	    <div class="col-sm-3 hidden-xs">
+	    	<div class="row">
+	    		<div class="logo">
+	    			<f:cObject typoscriptObjectPath='lib.logo' />
+	    		</div>
+	    		<div class="logo2">
+	    			<f:cObject typoscriptObjectPath='lib.logo2' />
+	    		</div>	
+	    	</div>	
+	    </div>
+	    <div class="col-sm-12 hidden-xs">
+	    	<ul class="kont">
+	    		<f:cObject typoscriptObjectPath='lib.navigation1' />
+	    	</ul>
+	    </div>   
+	</div>               
+</header>
+
+<f:format.raw>{banner_content}</f:format.raw>
+
+<section class="mid-content">
+	<div class="container">
+		<div class="col-sm-12">
+			<f:format.raw>{main_content}</f:format.raw>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="col-sm-8 footer-left hidden-xs">
+			<div class="col-sm-3">
+				<div class="row">
+					<f:cObject typoscriptObjectPath='lib.footernavigation' />
+					
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<f:cObject typoscriptObjectPath='lib.footernavigation1' />
+					
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<f:cObject typoscriptObjectPath='lib.footernavigation2' />
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<f:cObject typoscriptObjectPath='lib.footernavigation3' />
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 footer-right hidden-xs">
+			<div class="row">
+				<div class="footer-add">
+					<f:cObject typoscriptObjectPath='lib.footeraddres' />
+				</div>
+			</div>	
+		</div>
+		<div class="col-sm-12 footer-right visible-xs">
+			<f:cObject typoscriptObjectPath='lib.footeraddres' />
+		</div>			
+	</div>
+</footer>
