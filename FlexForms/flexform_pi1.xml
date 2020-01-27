@@ -1,0 +1,70 @@
+<T3DataStructure>
+  <meta>
+	<langDisable>1</langDisable>
+	<!--  <langChildren>1</langChildren>!-->
+  </meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+			 <TCEforms>
+            <sheetTitle>Portfolio Settings </sheetTitle>
+            </TCEforms>
+			<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Portfolio</label>				
+							<onChange>reload</onChange>														
+							<config>
+								<type>select</type>
+								<items type="array">	
+									<numIndex index="0" type="array">
+										<numIndex index="0">Portfolio [LIST]</numIndex>
+										<numIndex index="1">Portfolio->list</numIndex>
+									</numIndex>	
+									<numIndex index="1" type="array">
+										<numIndex index="0">Portfolio [DETAIL]</numIndex>
+										<numIndex index="1">Portfolio->detail</numIndex>
+									</numIndex>										
+								</items>
+								<selectedListStyle>width:300px</selectedListStyle>
+								<itemListStyle>width:300px</itemListStyle>
+								<maxitems>1</maxitems>
+					            <size>1</size>
+					            <multiple>1</multiple>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>	
+
+					 <settings.storagePid>
+					<TCEforms>
+					 <exclude>1</exclude>
+					 <label>storageFolder</label>
+					 <config>
+					  <type>group</type>
+					  <internal_type>db</internal_type>
+					  <allowed>pages</allowed>
+					  <size>1</size>
+					  <maxitems>1</maxitems>
+					  <minitems>0</minitems>
+					  <show_thumbs>1</show_thumbs>
+					 </config>
+					</TCEforms>
+				  </settings.storagePid>
+					<settings.limit>
+										<TCEforms>
+											<label>Records Limit</label>
+											<config>
+												<type>input</type>
+												<size>30</size>
+											</config>
+										</TCEforms>
+									</settings.limit>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
+
+	
+
