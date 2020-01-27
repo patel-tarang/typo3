@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-04-03T13:19:48Z" product-name="pdfviewer">
+		<header/>
+		<body>
+			<trans-unit id="tx_pdfviewer_domain_model_pdfviewer">
+				<source>P D F Viewer</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

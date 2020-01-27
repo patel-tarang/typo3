@@ -1,0 +1,32 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+
+	<f:for each="{pDFViewers}" as="pDFViewer">
+		<div class="col-sm-4">
+			<div class="row">
+					<div class="img-cbl">
+						<a href="javascript:;"><img class="_df_thumb " id="df_{pDFViewer.id}"  tags=3d,pdf-flipbook wpoptions=true src="uploads/tx_images/{pDFViewer.bgimage}"></a>
+						<h3>{pDFViewer.title}</h3>
+						<script data-cfasync="false">var option_df_{pDFViewer.id} = {"webgl":"true","outline":[],"backgroundColor":"#d8bfd8","height":"500","duration":"800","hard":"cover","forceFit":"true","autoEnableOutline":"false","autoEnableThumbnail":"false","overwritePDFOutline":"false","enableDownload":"true","direction":"1","pageMode":"0","soundEnable":"true","maxTextureSize":"1600","source":"uploads/tx_pdf/{pDFViewer.pdf}","wpOptions":"true"};</script>
+					</div>
+				</div>
+			</div>
+	</f:for>
+
+
+
+</f:section>

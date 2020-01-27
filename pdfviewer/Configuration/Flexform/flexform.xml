@@ -1,0 +1,71 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>PDF Viewer</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.irre>
+						<section>1</section>
+						<type>array</type>
+						<el>
+							<settings.subSection>
+								<type>array</type>
+								<el>
+									<title>
+										<TCEforms>
+											<label>PDF Title</label>
+											<config>
+												<type>input</type>
+												<size>30</size>
+											</config>
+										</TCEforms>
+									</title>
+									
+									<bgimage>
+										<TCEforms>
+											<label>Thumb Image</label>
+											<config>
+												<type>group</type>
+												<internal_type>file</internal_type>
+												<allowed>gif,png,jpg,jpeg</allowed>
+												<max_size>10240000</max_size>
+												<uploadfolder>uploads/tx_images/</uploadfolder>
+												<show_thumbs>1</show_thumbs>
+												<size>1</size>
+												<maxitems>1</maxitems>
+												<minitems>0</minitems>
+											</config>
+										</TCEforms>
+									</bgimage>		
+									<pdf>
+										<TCEforms>
+											<label>PDF</label>
+											<config>
+												<type>group</type>
+												<internal_type>file</internal_type>
+												<allowed>pdf</allowed>
+												<max_size>10240000</max_size>
+												<uploadfolder>uploads/tx_pdf/</uploadfolder>
+												<show_thumbs>1</show_thumbs>
+												<size>1</size>
+												<maxitems>1</maxitems>
+												<minitems>0</minitems>
+											</config>
+										</TCEforms>
+									</pdf>		
+								</el>
+							</settings.subSection>
+						</el>
+					</settings.irre>
+				</el>
+			</ROOT>
+		</sDEF>
+		
+	</sheets>
+</T3DataStructure>

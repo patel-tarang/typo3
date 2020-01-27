@@ -1,0 +1,15 @@
+
+plugin.tx_pdfviewer_pdfviewer {
+	view {
+		# cat=plugin.tx_pdfviewer_pdfviewer/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:pdfviewer/Resources/Private/Templates/
+		# cat=plugin.tx_pdfviewer_pdfviewer/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:pdfviewer/Resources/Private/Partials/
+		# cat=plugin.tx_pdfviewer_pdfviewer/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:pdfviewer/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_pdfviewer_pdfviewer//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
