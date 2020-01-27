@@ -1,0 +1,68 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+
+<f:flashMessages />
+<section class="banner">
+	<div class="bs-example">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators hidden-xs">
+			<f:for each="{homeslidersid}" as="homeid">
+			
+			 <li data-target="#myCarousel" data-slide-to="{homeid.id}" class="{homeid.class} act{homeid.id}" ></li>
+			</f:for>
+		</ol>					
+		<!-- slider -->
+	
+		 <div class="carousel-inner" role="listbox">
+			<f:for each="{homesliders}" as="homeslider">
+				<div class="item {homeslider.class}">
+					<img src="uploads/tx_slider/{homeslider.bgimage}" alt="{homeslider.title}" />
+					<div class="carousel-caption visible-xs">
+					 <h3><a href="{homeslider.url}">{homeslider.title}</a></h3>
+					 
+					</div>
+				</div>
+				
+			</f:for>
+		  </div>
+	  
+	  </div>
+	</div>
+	<div class="banner-text">
+    	<ul>
+    	<f:for each="{homeslidersid}" as="homeids">
+    		<li class="{homeids.class} act{homeids.id} acts"><a href="{homeids.url}">{homeids.title}</a></li>
+    	</f:for>
+    	</ul>
+    </div>
+</section>
+<!--<div class="visible-xs">
+	<section class="intro" id="intro">
+		<f:for each="{homeslidermobiles}" as="homeslidermobile">
+			
+			 <article class="mob-banner">
+				<img src="uploads/tx_slider/{homeslidermobile.bgimage}" alt="">
+				<h3><a href="{homeslidermobile.url}">{homeslidermobile.title}</a></h3>
+			</article>
+		</f:for>
+	</section>
+</div>-->		
+<!-- slider --> 	
+
+
+
+</f:section>

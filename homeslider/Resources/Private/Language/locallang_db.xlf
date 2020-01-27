@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-07T08:32:36Z" product-name="homeslider">
+		<header/>
+		<body>
+			<trans-unit id="tx_homeslider_domain_model_homeslider">
+				<source>Homeslider</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
