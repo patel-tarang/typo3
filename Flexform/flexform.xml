@@ -1,0 +1,102 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:hs_page_teaser/Resources/Private/Language/locallang_be.xml:flexforms_tab.settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.irre>
+						<section>1</section>
+						<type>array</type>
+						<el>
+							<settings.subSection>
+								<type>array</type>
+								<el>
+									<title>
+										<TCEforms>
+											<label>LLL:EXT:hs_page_teaser/Resources/Private/Language/locallang_be.xml:flexforms_tab.title</label>
+											<config>
+												<type>input</type>
+												<size>30</size>
+											</config>
+										</TCEforms>
+									</title>
+									<color>
+										<TCEforms>
+											<label>Select Background color</label>
+											<config>
+												<type>select</type>
+												 <items type="array">
+												<numIndex index="0" type="array">
+												<numIndex index="0"></numIndex>
+												<numIndex index="1"></numIndex>
+											   </numIndex>
+											   <numIndex index="1" type="array">
+												<numIndex index="0">brownBg</numIndex>
+												<numIndex index="1">brownBg</numIndex>
+												</numIndex>
+											   <numIndex index="2" type="array">
+												<numIndex index="0">darkgreyBg</numIndex>
+												<numIndex index="1">darkgreyBg</numIndex>
+											   </numIndex>
+											   <numIndex index="3" type="array">
+												<numIndex index="0">maroonBg</numIndex>
+												<numIndex index="1">maroonBg</numIndex>
+											   </numIndex>
+											   <numIndex index="4" type="array">
+												<numIndex index="0">blueBg</numIndex>
+												<numIndex index="1">blueBg</numIndex>
+											   </numIndex>
+											   <numIndex index="5" type="array">
+												<numIndex index="0">greenBg</numIndex>
+												<numIndex index="1">greenBg</numIndex>
+											   </numIndex>
+											   <numIndex index="6" type="array">
+												<numIndex index="0">orangeBg</numIndex>
+												<numIndex index="1">orangeBg</numIndex>
+											   </numIndex>
+											   <numIndex index="7" type="array">
+												<numIndex index="0">lighgreyBg</numIndex>
+												<numIndex index="1">lighgreyBg</numIndex>
+											   </numIndex>
+											   <numIndex index="8" type="array">
+												<numIndex index="0">silverBg</numIndex>
+												<numIndex index="1">silverBg</numIndex>
+											   </numIndex>
+											    </items>
+											  <minitems>0</minitems>
+											  <maxitems>1</maxitems>
+											  <size>1</size>
+											</config>
+										</TCEforms>
+									</color>
+									 <pages>
+										<TCEforms>
+										 <exclude>1</exclude>
+										 <label>Page</label>
+										 <config>
+										  <type>group</type>
+										  <internal_type>db</internal_type>
+										  <allowed>pages</allowed>
+										  <size>1</size>
+										  <maxitems>1</maxitems>
+										  <minitems>0</minitems>
+										  <show_thumbs>1</show_thumbs>
+										 </config>
+										</TCEforms>
+									   </pages>
+								</el>
+							</settings.subSection>
+						</el>
+					</settings.irre>
+				</el>
+			</ROOT>
+		</sDEF>
+		
+	</sheets>
+</T3DataStructure>
