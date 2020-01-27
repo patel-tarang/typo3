@@ -1,0 +1,145 @@
+1. copy from gitlab
+
+	git clone sourceurl(SSH) foldername
+
+2. Create branch with your feature:
+
+	git checkout -b feature/117334_XML_exported
+
+3. Write code. Commit changes:
+
+	git commit -am "My feature is ready"
+
+4. Push your branch to GitLab:
+
+	git push origin feature/117334_XML_exported
+	
+5. Switching Branches
+		
+	git checkout <branchname>
+	
+	
+6. View the changes you’ve made
+	
+	git status
+	
+7. View differences
+	
+	git diff
+	
+8. Add and commit local changes
+
+	git add <file-name OR folder-name>
+	git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
+	
+9. Add all changes to commit
+
+	git add .
+	git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
+	
+10. Send changes to GitLab.com
+
+	git push origin <name-of-branch>
+	
+	
+11. Delete all changes in the branch
+
+	git checkout .
+	
+12. Unstage all changes that have been added to the staging area
+
+	git reset .
+	
+13. Undo most recent commit
+
+	git reset HEAD~1
+	
+	
+	
+
+for hotfix merge request.	
+after merge in master branch
+1. git checkout master
+2. git pull
+3. git tag v1.9.5
+4. git push origin	
+5. git checkout develop
+6. git checkout -b feature/120150-hotfix_into_develop develop
+7. git merge --no-ff hotfix/v1.9.5 --no-commit
+8. git status
+	
+	
+
+Ruby install command
+
+$ rvm install 2.1.1
+Once you have installed a Ruby interpreter with RVM successfully you may then use it by executing the use command. For example, for Ruby 2.1.1:
+
+$ rvm use 2.1.1
+$ ruby -v
+
+
+change files and folder permission
+
+sudo chown -R dkd-deployment-local:www-data _processed_/
+
+
+vagrant@ubuntu-bionic:~$ cd /var/www/vagrant/htdocs/current/typo3conf/
+vagrant@ubuntu-bionic:/var/www/vagrant/htdocs/current/typo3conf$ touch ENABLE_INSTALL_TOOL
+vagrant@ubuntu-bionic:/var/www/vagrant/htdocs/current/typo3conf$ sudo chmod g+w  /var/www/vagrant/htdocs/releases/20191015152941/typo3conf/LocalConfiguration.php
+vagrant@ubuntu-bionic:/var/www/vagrant/htdocs/current/typo3conf$ exit
+
+
+
+
+open server in local:
+
+ssh www133.dkd.de
+
+composer install
+composer --working-dir=htdocs install
+
+composer update command
+
+composer --working-dir=htdocs update --lock
+
+
+remove file:
+
+rm typo3_src-8.7.29.tar.gz
+
+remove & create simlink:
+rm typo3_src &&  ln -s ../typo3_src-8.7.29 typo3_src
+
+
+
+alias of ls
+alias ll='ls -alh'
+
+
+CUCUMBER Test in localbox
+
+bundle exec cucumber --expand --format pretty CUCUMBER_HOST=https://typo3-solr.test/
+
+
+github token: 2e61299cc06b063a889ae3f6e3c9ddc58560087a
+
+
+
+https://media.newjobs.com/dege/redaktion/CV-Templates/Monster_Lebenslauf_muster_Softwareentwickler.pdf
+
+
+https://www.bsbh.org/
+https://www.kasto.com/
+https://www.frankfurt-university.de/
+https://www.wissweit.de/
+https://www.deutz.com/
+https://de.dmg-dental.com/
+https://www.indigodental.com/
+https://www.aktion-deutschland-hilft.de/
+https://www.typo3-solr.com/
+
+
+
+
+https://github.com/patel-tarang/typo3-extensions
