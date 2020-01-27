@@ -1,0 +1,21 @@
+<SUPPLIER>
+	<SUPPLIER_ID type="supplier_specific">{university.supplierId}</SUPPLIER_ID>
+	<SUPPLIER_NAME>{university.name -> f:format.cdata()}</SUPPLIER_NAME>
+	<ADDRESS>
+		<NAME><f:format.cdata><f:format.crop maxCharacters="30" append="" respectHtml="false">{university.name}</f:format.crop></f:format.cdata></NAME>
+		<STREET><f:format.cdata>{university.street}</f:format.cdata></STREET>
+		<ZIP><f:format.cdata>{university.zip}</f:format.cdata></ZIP>
+		<CITY><f:format.cdata>{university.city}</f:format.cdata></CITY>
+		<PHONE><f:format.cdata>{university.phone}</f:format.cdata></PHONE>
+		<EMAILS>
+			<EMAIL><f:format.cdata>{university.email}</f:format.cdata></EMAIL>
+		</EMAILS>
+		<URL><f:format.cdata><f:uri.typolink parameter="{university.link}" /></f:format.cdata></URL>
+	</ADDRESS>
+	<f:render partial="Kursnet/Contact" arguments="{organisator:university.organisator}"/>
+	<EXTENDED_INFO input_type="2">
+		<ORGANIZATIONAL_FORM type="{university.organizationalForm}"><f:format.cdata>
+			<f:translate key="LLL:EXT:dkd_fuas_event_mgt/Resources/Private/Language/locallang.xlf:tx_dkdfuaseventmgt_domain_model_university.label.organizational_form.{university.organizationalForm}" />
+		</f:format.cdata></ORGANIZATIONAL_FORM>
+	</EXTENDED_INFO>
+</SUPPLIER>

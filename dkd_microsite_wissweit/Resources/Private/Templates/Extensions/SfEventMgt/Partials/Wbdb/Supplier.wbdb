@@ -1,0 +1,13 @@
+<COURSESUPPLIER>
+	<CSS_NAME>{university.name -> f:format.cdata()}</CSS_NAME>
+	<CSS_ID>{university.uid}</CSS_ID>
+	<ADDRESS>
+		<A_NAME>{university.name}</A_NAME>
+		<A_STREET>{university.street -> f:format.cdata()}</A_STREET>
+		<A_CITY>{university.city -> f:format.cdata()}</A_CITY>
+		<A_ZIP>{university.zip -> f:format.cdata()}</A_ZIP>
+		<A_PHONE>{university.phone -> f:format.cdata()}</A_PHONE>
+		<A_EMAIL>{university.email -> f:format.cdata()}</A_EMAIL>
+		<A_WEB><f:format.cdata><f:uri.typolink parameter="{university.link}" /></f:format.cdata></A_WEB>
+	</ADDRESS>
+</COURSESUPPLIER>

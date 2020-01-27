@@ -1,0 +1,8 @@
+<CONTACT>
+	<CONTACT_ROLE type="1">Ansprechpartner</CONTACT_ROLE>
+	<LAST_NAME>{organisator.name -> f:format.cdata()}</LAST_NAME>
+	<PHONE>{organisator.phone -> f:format.cdata()}</PHONE>
+	<EMAILS>
+		<EMAIL>{organisator.email -> f:format.cdata()}</EMAIL>
+	</EMAILS>
+</CONTACT>

@@ -1,0 +1,42 @@
+// Remove padding, because language menu was removed
+.header-top .nav > li:last-child a {
+	padding: 0;
+}
+
+// Target group menu
+.header-top__dropdown-menu {
+	&.open {
+		.header-top__dropdown-menu-btn {
+			color: $font-color--negative;
+
+			&:hover,
+			&:active,
+			&:focus {
+				color: $font-color--negative;
+			}
+		}
+	}
+	.header-top__dropdown-menu-btn {
+		&:hover,
+		&:active,
+		&:focus {
+			color: $font-color--negative;
+		}
+	}
+}
+
+.header-top__dropdown-menu-box {
+	.header-top__dropdown-menu-box-item {
+		&:hover,
+		&._active{
+			a {
+				color: $font-color--negative;
+			}
+		}
+	}
+}
+
+
+.no-touch .header-top .nav > li > a:hover {
+	color: #2d89cc;
+}

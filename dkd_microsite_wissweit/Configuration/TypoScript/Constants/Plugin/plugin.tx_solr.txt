@@ -1,0 +1,15 @@
+plugin.tx_solr {
+  enabled = 0
+
+  search {
+    targetPage = 1494
+  }
+
+  index.queue {
+    news.fields.url.typolink.parameter = 1480
+  }
+}
+
+[globalVar = GP:L = 0]
+  plugin.tx_solr.enabled = 1
+[global]

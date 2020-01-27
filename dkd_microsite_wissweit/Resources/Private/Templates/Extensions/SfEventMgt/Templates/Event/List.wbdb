@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<DEFTISCAT
+	xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://projekt.iwwb-files.de/PAS/XSD/SingleDocument.xsd"
+	MULTIDOCUMENT="false"
+	DELTAUPDATE="false"
+	TIMESTAMP="{f:format.date(date: 'now', format:'c')}">
+
+	<DATASUPPLIER>
+		<DS_NAME>{settings.wbdb.datasSupplier.name -> f:format.cdata()}</DS_NAME>
+		<ADDRESS>
+			<A_NAME>{settings.wbdb.datasSupplier.name -> f:format.cdata()}</A_NAME>
+		</ADDRESS>
+		<DS_ID>{settings.wbdb.datasSupplier.dsId -> f:format.cdata()}</DS_ID>
+	</DATASUPPLIER>
+
+	<COURSESUPPLIERS>
+	<f:for each="{universities}" as="university">
+		<f:render partial="Wbdb/Supplier" arguments="{university:university}"/>
+	</f:for>
+	</COURSESUPPLIERS>
+
+    <CATEGORIES>
+    <f:for each="{categories}" as="category">
+        <CATEGORY>
+        <ID><f:format.cdata>{category.uid}</f:format.cdata></ID>
+        <NAME><f:format.cdata>{category.title}</f:format.cdata></NAME>
+        </CATEGORY>
+    </f:for>
+    </CATEGORIES>
+
+    <NEW_CATALOG FULLCATALOG="true">
+        <f:for each="{events}" as="event">
+            <f:render partial="Wbdb/Course" arguments="{event:event}"/>
+        </f:for>
+    </NEW_CATALOG>
+</DEFTISCAT>

@@ -1,0 +1,8 @@
+###
+# Content for PAGE-headerData
+
+page {
+  includeCSS {
+    screen = EXT:dkd_microsite_wissweit/Resources/Public/Css/screen.css
+  }
+}

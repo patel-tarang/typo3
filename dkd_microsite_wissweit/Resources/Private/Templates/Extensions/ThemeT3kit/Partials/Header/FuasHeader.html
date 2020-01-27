@@ -1,0 +1,57 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+	<f:comment>
+		Override from dkd_fuas
+		* Remove language switch
+	</f:comment>
+
+	<f:section name="Default">
+
+		<header class="header container">
+			<div class="header-top-wrp">
+
+				<div class="header-top">
+					<f:cObject typoscriptObjectPath="lib.menu.targetGroup" />
+
+					<f:cObject typoscriptObjectPath="lib.menu.quicklink" />
+
+					<f:cObject typoscriptObjectPath="lib.menu.top" />
+
+				</div>
+			</div>
+
+
+			<div class="header-middle-wrp js__header-middle-wrp">
+				<div class="header-middle">
+					<div class="offcanvas-navigation-toggle-btn js__offcanvas-toggle-btn">
+						<button type="button" class="offcanvas-navigation__toggle-btn" aria-label="{f:translate(key:'LLL:EXT:dkd_fuas/Resources/Private/Language/locallang.xlf:offcanvas.open')}"> <span>toggle menu</span><span></span><span></span><span></span> </button>
+						Menü
+					</div>
+					<div class="offcanvas-navigation-container js__offcanvas-navigation-container">
+						<nav class="offcanvas-navigation">
+							<div class="offcanvas-navigation__items-wrp">
+								<button type="button" class="offcanvas-navigation-close-btn js__offcanvas-close-btn" title="{f:translate(key:'LLL:EXT:dkd_fuas/Resources/Private/Language/locallang.xlf:offcanvas.close')}" aria-label="{f:translate(key:'LLL:EXT:dkd_fuas/Resources/Private/Language/locallang.xlf:offcanvas.close')}"></button>
+								<ul class="offcanvas-navigation__items-list js__offcanvas__items-list">
+									<f:cObject typoscriptObjectPath="lib.menu.offcanvas" />
+								</ul>
+
+							</div>
+						</nav>
+						<div class="offcanvas-meta-navigation js__offcanvas-meta-navigation">
+							<f:cObject typoscriptObjectPath="lib.menu.top" />
+							<f:cObject typoscriptObjectPath="lib.menu.targetGroup" />
+							<f:cObject typoscriptObjectPath="lib.menu.quicklink" />
+						</div>
+					</div>
+					<f:cObject typoscriptObjectPath="lib.header.middle.search" />
+					<div class="header-middle__logo">
+						<f:cObject typoscriptObjectPath="lib.header.logo.main" />
+					</div>
+					<div class="offcanvas-navigation-overlay js__offcanvas-overlay"></div>
+				</div>
+			</div>
+		</header>
+	</f:section>
+</div>

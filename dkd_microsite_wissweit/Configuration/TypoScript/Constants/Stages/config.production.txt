@@ -1,0 +1,9 @@
+###
+# Global constants
+
+lib.tracking.siteId >
+
+# EXT:theme_t3kit constants
+themes.configuration.tracking.ga_siteVerification =
+
+config.platformsh.domain = wissweit.de

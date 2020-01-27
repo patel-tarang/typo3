@@ -1,0 +1,1 @@
+themes.configuration.header.logo.main.file = EXT:dkd_microsite_wissweit/Resources/Public/Images/logo.svg

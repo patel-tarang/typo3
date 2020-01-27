@@ -1,0 +1,8 @@
+config {
+  # Remove default language. Wissweit only use one language
+  defaultGetVars {
+    L >
+  }
+  # Only allow default language for wissweit
+  linkVars = L(0)
+}

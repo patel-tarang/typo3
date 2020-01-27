@@ -1,0 +1,79 @@
+###
+# File includes
+#
+# Can not use constants for file include. See http://bugs.typo3.org/view.php?id=14744
+
+# Include setup from other extensions
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dkd_fuas/Configuration/TypoScript/Setup/page.txt">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dkd_microsite_wissweit/Configuration/TypoScript/Setup/config.lang.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dkd_microsite_wissweit/Configuration/TypoScript/Setup/lib/lib.header.logo.main.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dkd_microsite_wissweit/Configuration/TypoScript/Setup/page.header.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dkd_microsite_wissweit/Configuration/TypoScript/Setup/plugin/plugin.tx_themes.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dkd_microsite_wissweit/Configuration/TypoScript/Setup/plugin/plugin.tx_sfeventmgt.txt">
+
+config.typolinkCheckRootline = 1
+config.typolinkEnableLinksAcrossDomains = 1
+
+kursnet = PAGE
+kursnet {
+  # Timestamp at creation date. Simple method to avoid conflicts.
+  typeNum = 1530605877
+
+  config {
+    disableAllHeaderCode = 1
+    additionalHeaders {
+      10.header = Content-Type:application/xml; charset=ISO-8859-1
+    }
+    xhtml_cleaning = 0
+    admPanel = 0
+    metaCharset = ISO-8859-1
+    no_cache = 1
+  }
+
+  5 = TEXT
+  5 {
+    # Set XML prologue not within template to avoid ISO-8859-1 for file.
+    # Prevent double encoding of file
+    value = <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  }
+  10 = < tt_content.list.20.sfeventmgt_pievent
+  10 {
+    format = kursnet
+    switchableControllerActions {
+      Event {
+        1 = list
+      }
+    }
+    settings {
+      disableOverrideDemand = 0
+      displayMode = current_future
+      storagePage = {$plugin.tx_sfeventmgt.settings.storagePage}
+      detailPid = {$plugin.tx_sfeventmgt.settings.detail.pid}
+      recursive = 1
+      restrictForeignRecordsToStoragePage = 1
+      list.format < kursnet.10.format
+    }
+  }
+}
+
+wbdb < kursnet
+wbdb {
+  # Timestamp at creation date. Simple method to avoid conflicts.
+  typeNum = 1533031787
+
+  5 >
+
+  10 {
+    format = wbdb
+    settings {
+      list.format < wbdb.10.format
+
+      wbdb.datasSupplier {
+        name = {$plugin.tx_sfeventmgt.settings.wbdb.datasSupplier.name}
+        dsId = {$plugin.tx_sfeventmgt.settings.wbdb.datasSupplier.dsId}
+      }
+    }
+  }
+
+}

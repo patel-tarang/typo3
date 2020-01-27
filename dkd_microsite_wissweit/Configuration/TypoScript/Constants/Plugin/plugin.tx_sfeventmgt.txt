@@ -1,0 +1,13 @@
+plugin.tx_sfeventmgt {
+  settings {
+    detail.pid = 1533
+    storagePage = 1530,1468
+    wbdb {
+      datasSupplier {
+        name = WissWeit (wissweit.de)
+        # Generated uuid
+        dsId = 384614c4-779b-431c-b83d-12ad4f3412df
+      }
+    }
+  }
+}

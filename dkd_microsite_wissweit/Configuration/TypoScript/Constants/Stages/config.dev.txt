@@ -1,0 +1,8 @@
+###
+# Dev constants
+lib.tracking.siteId >
+
+# EXT:theme_t3kit constants
+themes.configuration.isDevelopment = 1
+
+config.platformsh.domain = wissweituniversityfrankfurt.test

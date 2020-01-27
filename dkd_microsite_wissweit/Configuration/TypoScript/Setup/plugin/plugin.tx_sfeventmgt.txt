@@ -1,0 +1,11 @@
+plugin.tx_sfeventmgt {
+  view {
+    templateRootPaths.10 = EXT:dkd_microsite_wissweit/Resources/Private/Templates/Extensions/SfEventMgt/Templates
+    partialRootPaths.10 = EXT:dkd_microsite_wissweit/Resources/Private/Templates/Extensions/SfEventMgt/Partials
+  }
+  settings {
+    kursnet {
+      baseUrl < config.baseURL
+    }
+  }
+}

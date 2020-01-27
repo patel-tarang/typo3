@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-11-02T17:54:12Z" product-name="dkd_microsite_wissweit">
+		<header/>
+		<body>
+			<trans-unit id="mobile.logo" xml:space="preserve">
+				<source>WissWeit Logo</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

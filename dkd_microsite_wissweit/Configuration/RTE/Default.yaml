@@ -1,0 +1,13 @@
+# Override from dkd_fuas
+
+# Load default processing options
+imports:
+    - { resource: "EXT:dkd_fuas/Configuration/RTE/Default.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  config:
+    #Add custom styles to the editor iframe. dose not affect FE only BE
+    contentsCss:
+      - "EXT:dkd_microsite_wissweit/Resources/Public/Css/rte.css"

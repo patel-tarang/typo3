@@ -1,0 +1,14 @@
+###
+# Global constants
+
+lib.tracking.siteId =
+
+config.platformsh.domain = testing-develop-wissweit-de.dkd-stage.net
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dkd_fuas/Configuration/TypoScript/Constants/Plugin/plugin.tx_solr-hostedsolr.txt">
+
+plugin.tx_sfeventmgt {
+  settings {
+    detail.pid = 1537
+  }
+}

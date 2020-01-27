@@ -1,0 +1,28 @@
+# Favicon
+themes.configuration.favicons.path = /typo3conf/ext/dkd_microsite_wissweit/Resources/Public/Images/Favicons
+
+# Header Top
+themes.configuration.header.top.menu.containerPid = 1496
+
+themes.configuration.pages.startsite = 1464
+
+# cat=theme,basic/site; type=string; label= Site Name
+themes.configuration.siteName = WissWeit
+
+# Footer
+themes.configuration.less.var.footerColor = #222222
+themes.configuration.less.var.footerLinkColor = #154B99
+themes.configuration.less.var.footerLinkHoverColor = #154B99
+
+# Main Menu Colors
+themes.configuration.less.var.navLinkActiveColor = #154B99
+
+# Main Colors
+themes.configuration.less.var.mainTextColor = #000000
+themes.configuration.less.var.mainColor = #000000
+themes.configuration.less.var.mainLinkColor = #154B99
+themes.configuration.less.var.mainLinkHoverColor = #154B99
+
+# Socialmedia
+themes.configuration.less.var.socialIconsBgColor = #154B99
+themes.configuration.less.var.socialIconsHoverColor = #154B99

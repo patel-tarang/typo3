@@ -1,0 +1,30 @@
+// Add margin, because language menu was removed
+.offcanvas-navigation-container {
+	.offcanvas-meta-navigation {
+		nav {
+			margin-bottom: 45px;
+		}
+	}
+}
+
+.offcanvas-navigation-toggle-btn {
+	color: $font-color--main;
+}
+
+
+// #SUB NAVIGATION
+.offcanvas-navigation__sub-item-list {
+	.offcanvas-navigation__sub-item-link {
+		color: $headline-color;
+	}
+}
+
+.offcanvas-navigation-container {
+	.header-top__dropdown-menu{
+		&.open {
+			.header-top__dropdown-menu-btn {
+				color: $font-color--negative;
+			}
+		}
+	}
+}

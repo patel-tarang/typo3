@@ -1,0 +1,16 @@
+.header-middle__search-box {
+	.fa-search {
+		color: $font-color--main;
+	}
+}
+
+// Set styles if search input field is focused
+.tx-solr-searchbox.search-focused {
+	.header-middle__search-box {
+		border-bottom: 1px solid $headline-color;
+	}
+}
+
+.header-middle-fixed .header-middle__logo-link {
+	width: 135px;
+}

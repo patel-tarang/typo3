@@ -1,0 +1,30 @@
+plugin.tx_news {
+  settings {
+    list {
+      rss {
+        channel {
+          title = RSS-Feed der WissWeit
+          description = RSS-Feed der WissWeit
+          language = de_DE
+          copyright = WissWeit - Das Hochschulportal für wissenschaftliche Weiterbildung in Hessen
+        }
+      }
+    }
+  }
+}
+
+[globalVar = GP:L = 1]
+  plugin.tx_news {
+    settings {
+      list {
+        rss {
+          channel {
+            title = RSS-Feed from WissWeit
+            description = RSS-Feed from WissWeit
+            language = en_GB
+          }
+        }
+      }
+    }
+  }
+[global]

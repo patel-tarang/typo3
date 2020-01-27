@@ -1,0 +1,7 @@
+# Add image for mobile view.
+lib.header.logo {
+    main.stdWrap.typolink.wrap.cObject {
+      file = EXT:dkd_microsite_wissweit/Resources/Public/Images/mobile-logo.svg
+      altText.data = LLL:EXT:dkd_microsite_wissweit/Resources/Private/Language/locallang.xlf:mobile.logo
+    }
+}

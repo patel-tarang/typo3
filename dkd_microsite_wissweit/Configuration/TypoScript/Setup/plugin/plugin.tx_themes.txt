@@ -1,0 +1,7 @@
+plugin.tx_themes {
+    view {
+        partialRootPaths {
+            8000 =  EXT:dkd_microsite_wissweit/Resources/Private/Templates/Extensions/ThemeT3kit/Partials
+        }
+    }
+}

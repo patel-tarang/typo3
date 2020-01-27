@@ -1,0 +1,9 @@
+// This is just some basic SCSS and should be changed when starting a new project.
+@import "01-Settings/color-variables";
+@import "../../../../dkd_fuas/Resources/Private/Sass/screen";
+
+@import  "06-Components/header.top";
+@import "06-Components/header.middle";
+@import  "06-Components/nav.offcanvas";
+@import "06-Components/footer";
+@import "06-Components/carousel";

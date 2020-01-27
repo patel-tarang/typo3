@@ -1,0 +1,10 @@
+// #CAROUSEL
+
+.logo-carousel__btn-next:before,
+.logo-carousel__btn-prev:before {
+	color: transparentize($link-color--main, .7);
+}
+
+.carousel-caption {
+	background-color: #154B99;
+}

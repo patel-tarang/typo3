@@ -1,0 +1,8 @@
+plugin.tx_dkdfuascontacts {
+  persistence {
+    storagePid = 1466
+  }
+  settings {
+    detailPid = 1474
+  }
+}

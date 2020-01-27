@@ -1,0 +1,9 @@
+###
+# Global constants
+
+global {
+  targetGroupId = 1504
+  quicklinkId = 1507
+  cookiePolicyLink = 1501
+  websitename = WissWeit
+}

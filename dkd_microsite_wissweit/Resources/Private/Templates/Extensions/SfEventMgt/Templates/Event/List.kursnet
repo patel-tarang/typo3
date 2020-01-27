@@ -1,0 +1,35 @@
+<OPENQCAT
+	xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://www.kursnet-online.arbeitsagentur.de/onlinekurs/upload/openq/open-Qcat.V1.1.xsd">
+	<HEADER>
+		<GENERATOR_INFO>TYPO3</GENERATOR_INFO>
+		<CATALOG>
+			<LANGUAGE>deu</LANGUAGE>
+			<CATALOG_ID>20180703-6</CATALOG_ID>
+			<CATALOG_VERSION>Vers_KURSNET</CATALOG_VERSION>
+			<CATALOG_NAME>KURSNET-Import</CATALOG_NAME>
+			<GENERATION_DATE><f:format.date format="c">now</f:format.date></GENERATION_DATE>
+			<MIME_ROOT>{settings.kursnet.baseUrl -> f:format.cdata()}</MIME_ROOT>
+		</CATALOG>
+		<RECIPIENT>
+			<RECIPIENT_ID>BA</RECIPIENT_ID>
+			<RECIPIENT_NAME>Informationssystem KURSNET</RECIPIENT_NAME>
+			<ADDRESS>
+				<NAME>BABA</NAME>
+				<STREET>Regensburgerstr. 104</STREET>
+				<ZIP>90478</ZIP>
+				<CITY>Nürnberg</CITY>
+				<COUNTRY>DE</COUNTRY>
+				<URL>http://infobub.arbeitsagentur.de/kursnet</URL>
+			</ADDRESS>
+		</RECIPIENT>
+	<f:for each="{universities}" as="university">
+		<f:render partial="Kursnet/Supplier" arguments="{university:university}"/>
+	</f:for>
+	</HEADER>
+	<NEW_CATALOG FULLCATALOG="true">
+		<f:for each="{events}" as="event">
+			<f:render partial="Kursnet/NewCatalog" arguments="{event:event}"/>
+		</f:for>
+	</NEW_CATALOG>
+</OPENQCAT>
