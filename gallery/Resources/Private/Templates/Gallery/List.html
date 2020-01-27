@@ -1,0 +1,93 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+
+<f:flashMessages renderMode="div" />
+ <f:if condition="{gid} == '' ">
+<section>
+<div class="container">
+	 <div class="row mart20">
+		<f:for each="{galleries}" as="gallery">
+			<div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="porj-content">
+                <a href="{gallery.url}"><img class="img-responsive" alt="" src="{gallery.thumbimage_path}" /></a>
+                  <a href="{gallery.url}"><h4>{gallery.title}</h4></a>
+                  <p>{gallery.subtitle}</p>
+              </div>
+            </div>
+			
+		</f:for>
+	</div>
+</div>
+
+</section>
+ </f:if>
+ <f:if condition="{gid} > 0 ">
+ <div id="container">
+	<div id="main" role="main">
+      <section class="slider">
+        <div id="slider" class="flexslider">
+          <ul class="slides">
+			<f:for each="{sliders1}" as="slider">
+				<li>
+				  <div class="ban-top"><span>{slider.title}</span><a href="{slider.back}">X  Projekt schliessen</a></div>
+				  <img src="{slider.big}" alt="" />
+				</li>
+			</f:for>
+          </ul>
+        </div>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+			<f:for each="{sliders}" as="slider1">
+				<li><img src="{slider1.big}" alt=""/></li>
+			</f:for>
+          </ul>
+        </div>
+      </section>
+      
+    </div>
+    </div>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script defer src="fileadmin/Resources/Public/JavaScript/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+   
+    $(window).load(function(){
+      $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth:140,
+        itemMargin: 5,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+         start: function(slider){
+         $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+  </f:if>
+</f:section>
